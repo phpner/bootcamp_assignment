@@ -57,23 +57,23 @@ export default router;
 ###  The main page
 
 ![](https://dl3.joxi.net/drive/2024/02/04/0031/2220/2087084/84/62301e52fe.jpg)
-
+<hr>
 ### The articles page (CRUD)
 
 ![](https://dl4.joxi.net/drive/2024/02/04/0031/2220/2087084/84/132f237984.jpg)
-
+<hr>
 ### Add new Article (CRUD)
 
 ![](https://dl3.joxi.net/drive/2024/02/04/0031/2220/2087084/84/9d279ce088.jpg)
-
+<hr>
 ### Action buttons (CRUD)
 
 ![](https://dl4.joxi.net/drive/2024/02/04/0031/2220/2087084/84/7ba9d6fa73.jpg)
-
+<hr>
 ### Search page and form
 
 ![](https://dl3.joxi.net/drive/2024/02/04/0031/2220/2087084/84/874266d2c1.jpg)
-
+<hr>
 > ## TODO:
 > * [x] CRUD
 > * [ ] Integrate react admin or adminjs.
