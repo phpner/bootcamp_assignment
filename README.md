@@ -18,10 +18,9 @@
 
 
 > ## Project structure
-> ![](https://dl3.joxi.net/drive/2024/02/04/0031/2220/2087084/84/387d89aa51.jpg)
->
 > * The 'modules' folder contains the 'MC' (Model-Controller) part of the MVC logic.
 > * The 'view' folder represents the 'V' (View) in MVC logic.
+> ![](https://dl3.joxi.net/drive/2024/02/04/0031/2220/2087084/84/387d89aa51.jpg)
 
 
 > ### The file 'app/routers.js' contains the main router logic, including CRUD operations.
