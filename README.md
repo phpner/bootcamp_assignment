@@ -2,7 +2,6 @@
 
 # Full Stack Level 5 Bootcamp Assignment
 
-> #### This project is running in the mode ECMAScript modules (ESM) instead of CommonJS modules.
 
 > 1. git clone https://github.com/phpner/bootcamp_assignment.git
 > 2. Open the folder bootcamp_assignment
@@ -12,7 +11,8 @@
 > 6. Open http://127.0.0.1:3000
 
 
-> ### The project follows the MVC (Model-View-Controller) pattern
+> * ### This project is running in the mode ECMAScript modules (ESM) instead of CommonJS modules.
+> * ###  The project follows the MVC (Model-View-Controller) pattern
 > ![](https://dl4.joxi.net/drive/2024/02/04/0031/2220/2087084/84/4e9ee4ebb2.jpg)
 
 
