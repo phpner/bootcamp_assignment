@@ -1,0 +1,26 @@
+<!-- HEADER -->
+<%- include('../header'); -%>
+<main>
+    <div class="container  pt-4">
+        <h1 class="pt-4">Edit <%= article.title %></h1>
+        <form class="row g-3" method="post" action="/article?_method=PUT">
+            <input type="hidden" name="id" value="<%= article._id %>">
+            <div class="col-md-12">
+                <label for="inputEmail4" class="form-label">Title</label>
+                <input type="title" name="title" value="<%= article.title %>" class="form-control" id="inputEmail4">
+            </div>
+            <div class="form-floating">
+                <textarea name="content" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                          style="height: 100px"><%= article.content %></textarea>
+                <label for="floatingTextarea2">Content</label>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+            </div>
+        </form>
+    </div>
+</main>
+<!-- FOOTER -->
+<%- include('../footer'); -%>

@@ -1,0 +1,117 @@
+<!-- HEADER -->
+<%- include('../header'); -%>
+<main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="bd-placeholder-img" src="/img/1.jpg">
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p>Some representative placeholder content for the first slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <img class="bd-placeholder-img" src="/img/2.webp">
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="bd-placeholder-img" src="/img/3.jpg">
+
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container marketing pt-4">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+
+                <img class="bd-placeholder-img rounded-circle" src="/img/Will_Smith.jpg">
+
+                <h2>Will Smith</h2>
+                <p>Will Smith and Chris Rock</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" src="/img/Cameron_Diaz.jpg">
+
+                <h2>Cameron Diaz</h2>
+                <p>Explore the latest public opinion about Cameron Diaz</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" src="/img/Julianne_Moore.jpg">
+
+                <h2>Julianne Moore</h2>
+                <p>Explore the latest public opinion about Julianne Moore</p>
+                <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE Table -->
+        <hr class="featurette-divider">
+
+        <table class="table mb-5">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Awards</th>
+                <th scope="col">Films</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% results.forEach( (result, i) => { %>
+                <tr>
+                    <th scope="row"><%= (i + 1) %></th>
+                    <td><%= result.name %></td>
+                    <td><%= result.awards %></td>
+                    <td><%= result.films %></td>
+                </tr>
+            <% }); %>
+            </tbody>
+        </table>
+
+        <!-- /END THE Table -->
+
+    </div><!-- /.container -->
+</main>
+<!-- FOOTER -->
+<%- include('../footer'); -%>
+
+

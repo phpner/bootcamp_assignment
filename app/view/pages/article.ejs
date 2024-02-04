@@ -1,0 +1,112 @@
+<!-- HEADER -->
+<%- include('../header'); -%>
+<main>
+    <div class="container marketing pt-4">
+        <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add new article
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add new article</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row g-3" method="post" action="/article">
+                            <div class="col-md-12">
+                                <label for="inputEmail4" class="form-label">Title</label>
+                                <input type="title" required name="title" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-floating">
+                <textarea name="content" class="form-control" required placeholder="Leave a comment here" id="floatingTextarea2"
+                          style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Content</label>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="mt-4">All articles</h1>
+
+            <% articles.forEach( (article, i) => { %>
+                <div class="row featurette mb-5">
+                    <hr class="featurette-divider">
+                    <div class="d-flex mb-4">
+                        <a href="#" data-articleid="<%= article._id %>"
+                           class="article_delete bi bi-trash3 col-md-1"></a>
+
+                        <a href="/article/<%= article._id %>" class="bi bi-pencil col-md-1"></a>
+                    </div>
+                    <% if (i % 2 === 0) { %>
+                        <div class="col-md-7 bs-border-color-rgb ">
+                            <h2 class="featurette-heading"><%= article.title %></h2>
+                            <p class="lead"><%= article.content %></p>
+                        </div>
+                        <div class="col-md-5">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                                 width="500"
+                                 height="500" xmlns="http://www.w3.org/2000/svg" role="img"
+                                 aria-label="Placeholder: 500x500"
+                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#eee"/>
+                                <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+                            </svg>
+                        </div>
+
+                    <% } else { %>
+                        <div class="col-md-7 order-md-2">
+                            <h2 class="featurette-heading"><%= article.title %></h2>
+                            <p class="lead"><%= article.content %></p>
+                        </div>
+                        <div class="col-md-5 order-md-1">
+                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+                                 width="500"
+                                 height="500" xmlns="http://www.w3.org/2000/svg" role="img"
+                                 aria-label="Placeholder: 500x500"
+                                 preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title>
+                                <rect width="100%" height="100%" fill="#eee"/>
+                                <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
+                            </svg>
+
+                        </div>
+                    <% } %>
+                </div>
+            <% }); %>
+
+            <script>
+                let articleDelete = document.querySelectorAll('.article_delete');
+                for (let article of articleDelete) {
+                    article.addEventListener('click', function (e) {
+                        e.preventDefault()
+                        if (!confirm("Delete ?")) return;
+
+                        fetch('/article/' + this.dataset.articleid, {
+                            method: 'DELETE',
+                            body: {id: this.dataset.articleid ?? null}
+                        }).then(async response => {
+                            if (await response.json() !== null) {
+                                article.closest('.featurette').classList.add('delete_process')
+                                setTimeout(r => {
+                                    article.closest('.featurette').remove();
+                                }, 2000)
+
+                            }
+                        })
+                    })
+                }
+            </script>
+
+    </div><!-- /.container -->
+</main>
+<!-- FOOTER -->
+<%- include('../footer'); -%>
