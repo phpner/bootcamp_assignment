@@ -14,11 +14,11 @@ js Install and run: npm install and then run node ./index.js
 
 
 > ### The project follows the MVC (Model-View-Controller) pattern
-> ![](https://joxi.ru/vAWa9exTK1QwBm.jpg "")
+> ![](https://joxi.ru/vAWa9exTK1QwBm.jpg)
 
 
 > ## Project structure
-> ![](https://joxi.ru/LmG1BpzFbe96XA.jpg "")
+> ![](https://joxi.ru/LmG1BpzFbe96XA.jpg)
 
 > * The 'modules' folder contains the 'MC' (Model-Controller) part of the MVC logic.
 > * The 'view' folder represents the 'V' (View) in MVC logic.
@@ -56,23 +56,23 @@ export default router;
 
 ###  The main page
 
-![](https://joxi.ru/E2p4ynwUV9MZP2.jpg "")
+![](https://joxi.ru/E2p4ynwUV9MZP2.jpg)
 
 ### The articles page (CRUD)
 
-![](https://joxi.ru/xAeqKXjh6pxQJA.jpg "")
+![](https://joxi.ru/xAeqKXjh6pxQJA.jpg)
 
 ### Add new Article (CRUD)
 
-![](https://joxi.ru/1A5PBJnHknyeG2.jpg "")
+![](https://joxi.ru/1A5PBJnHknyeG2.jpg)
 
 ### Action buttons (CRUD)
 
-![](https://joxi.ru/Y2LJ9DWie9J0vr.jpg "")
+![](https://joxi.ru/Y2LJ9DWie9J0vr.jpg)
 
 ### Search page and form
 
-![](https://joxi.ru/l2ZO9YyikwW9NA.jpg "")
+![](https://joxi.ru/l2ZO9YyikwW9NA.jpg)
 
 > ## TODO:
 > * [x] CRUD
