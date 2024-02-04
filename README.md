@@ -56,23 +56,23 @@ export default router;
 
 ###  The main page
 
-![](https://joxi.ru/E2p4ynwUV9MZP2.jpg)
+![](https://dl3.joxi.net/drive/2024/02/04/0031/2220/2087084/84/62301e52fe.jpg)
 
 ### The articles page (CRUD)
 
-![](https://joxi.ru/xAeqKXjh6pxQJA.jpg)
+![](https://dl4.joxi.net/drive/2024/02/04/0031/2220/2087084/84/132f237984.jpg)
 
 ### Add new Article (CRUD)
 
-![](https://joxi.ru/1A5PBJnHknyeG2.jpg)
+![](https://dl3.joxi.net/drive/2024/02/04/0031/2220/2087084/84/9d279ce088.jpg)
 
 ### Action buttons (CRUD)
 
-![](https://joxi.ru/Y2LJ9DWie9J0vr.jpg)
+![](https://dl4.joxi.net/drive/2024/02/04/0031/2220/2087084/84/7ba9d6fa73.jpg)
 
 ### Search page and form
 
-![](https://joxi.ru/l2ZO9YyikwW9NA.jpg)
+![](https://dl3.joxi.net/drive/2024/02/04/0031/2220/2087084/84/874266d2c1.jpg)
 
 > ## TODO:
 > * [x] CRUD
