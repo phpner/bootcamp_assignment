@@ -1,24 +1,24 @@
-# Full Stack Level 5 Bootcamp Assignment
 ## Oleksandr Vasyliev
+
+# Full Stack Level 5 Bootcamp Assignment
+
+> 1. git clone https://github.com/phpner/bootcamp_assignment.git
+> 2. Open the folder bootcamp_assignment
+> 3. Run: npm install
+> 4. Set up mongoose connection ./index.js
+> 5. Run: node ./index.js
+> 6. Open http://127.0.0.1:3000
+
 
 > ### This project is running in the mode ECMAScript modules (ESM) instead of CommonJS modules.
 
 
-```
-
-
-js Install and run: npm install and then run node ./index.js 
-
-
-```
-
-
 > ### The project follows the MVC (Model-View-Controller) pattern
-> ![](https://joxi.ru/vAWa9exTK1QwBm.jpg)
+> ![](https://dl4.joxi.net/drive/2024/02/04/0031/2220/2087084/84/4e9ee4ebb2.jpg)
 
 
 > ## Project structure
-> ![](https://joxi.ru/LmG1BpzFbe96XA.jpg)
+> ![](https://dl3.joxi.net/drive/2024/02/04/0031/2220/2087084/84/387d89aa51.jpg)
 
 > * The 'modules' folder contains the 'MC' (Model-Controller) part of the MVC logic.
 > * The 'view' folder represents the 'V' (View) in MVC logic.
