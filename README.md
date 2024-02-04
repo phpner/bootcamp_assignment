@@ -2,15 +2,14 @@
 
 # Full Stack Level 5 Bootcamp Assignment
 
+> #### This project is running in the mode ECMAScript modules (ESM) instead of CommonJS modules.
+
 > 1. git clone https://github.com/phpner/bootcamp_assignment.git
 > 2. Open the folder bootcamp_assignment
 > 3. Run: npm install
 > 4. Set up mongoose connection ./index.js
 > 5. Run: node ./index.js
 > 6. Open http://127.0.0.1:3000
-
-
-> ### This project is running in the mode ECMAScript modules (ESM) instead of CommonJS modules.
 
 
 > ### The project follows the MVC (Model-View-Controller) pattern
